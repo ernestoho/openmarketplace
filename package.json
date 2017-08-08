@@ -2,10 +2,57 @@
   "name": "open-marketplace",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "lint": "eslint .",
+    "pretest": "npm run lint --silent"
   },
   "dependencies": {
     "babel-runtime": "^6.20.0",
     "meteor-node-stubs": "~0.2.4"
-  }
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-config-meteor": "^0.1.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "stylelint": "^8.0.0"
+  },
+  "eslintConfig": {
+    "extends": "meteor"
+  },
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/bonotech/OpenMarketplace.git"
+	},
+	"bugs": {
+		"url": "https://github.com/bonotech/OpenMarketplace/issues",
+		"email": "lindoelio@bono.io"
+  },
+  "keywords": [
+		"openmarketplace",
+		"marketplace",
+		"ecommerce"
+  ],
+  "author": {
+		"name": "Bono Tech",
+		"url": "http://bono.io"
+	},
+	"contributors": [
+		{
+			"name": "Lindoélio Lázaro",
+			"email": "lindoelio@bono.io"
+		},
+		{
+			"name": "Israel Diogo",
+			"email": "israel@bono.io"
+    },
+    {
+			"name": "Bruno Oliveira",
+			"email": "bruno@bono.io"
+		}
+	]
 }
