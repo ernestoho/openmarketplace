@@ -25,34 +25,34 @@
     "extends": "meteor"
   },
   "repository": {
-		"type": "git",
-		"url": "https://github.com/bonotech/OpenMarketplace.git"
-	},
-	"bugs": {
-		"url": "https://github.com/bonotech/OpenMarketplace/issues",
-		"email": "lindoelio@bono.io"
+    "type": "git",
+    "url": "https://github.com/bonotech/OpenMarketplace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bonotech/OpenMarketplace/issues",
+    "email": "lindoelio@bono.io"
   },
   "keywords": [
-		"openmarketplace",
-		"marketplace",
-		"ecommerce"
+    "openmarketplace",
+    "marketplace",
+    "ecommerce"
   ],
   "author": {
-		"name": "Bono Tech",
-		"url": "http://bono.io"
-	},
-	"contributors": [
-		{
-			"name": "Lindoélio Lázaro",
-			"email": "lindoelio@bono.io"
-		},
-		{
-			"name": "Israel Diogo",
-			"email": "israel@bono.io"
+    "name": "Bono Tech",
+    "url": "http://bono.io"
+  },
+  "contributors": [
+    {
+      "name": "Lindoélio Lázaro",
+      "email": "lindoelio@bono.io"
     },
     {
-			"name": "Bruno Oliveira",
-			"email": "bruno@bono.io"
-		}
-	]
+      "name": "Israel Diogo",
+      "email": "israel@bono.io"
+    },
+    {
+      "name": "Bruno Oliveira",
+      "email": "bruno@bono.io"
+    }
+  ]
 }

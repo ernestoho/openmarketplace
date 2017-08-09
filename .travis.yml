@@ -1,0 +1,29 @@
+language: node_js
+services:
+  - mongodb
+node_js:
+  - "4"
+addons:
+  apt:
+    sources:
+      - google-chrome
+      - ubuntu-toolchain-r-test
+    packages:
+      - google-chrome-stable
+      - g++-4.8
+  firefox: "latest"
+before_cache:
+  - rm -rf $HOME/build/bonotech/OpenMarketplace/.meteor/local/log
+  - rm -rf $HOME/build/bonotech/OpenMarketplace/.meteor/local/run
+  - rm -rf $HOME/build/bonotech/OpenMarketplace/.meteor/local/db
+before_install:
+  - if [ ! -e "$HOME/.meteor/meteor" ]; then curl https://install.meteor.com | sed s/--progress-bar/-sL/g | /bin/sh; fi
+before_script:
+  - "export PATH=$HOME/.meteor:$PATH"
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/223aa9c20089a22f388b
+    on_success: always  # options: [always|never|change] default: always
+    on_failure: always  # options: [always|never|change] default: always
+    on_start: never     # options: [always|never|change] default: always
