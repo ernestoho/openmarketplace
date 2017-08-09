@@ -1,11 +1,9 @@
 module.exports = {
-    "extends": "standard",
-    "parserOptions": {
+	"plugins": ["meteor"],
+  "extends": ["plugin:meteor/recommended", "standard"],
+	"parserOptions": {
 		"sourceType": "module",
-		"ecmaVersion": 2017,
-		"ecmaFeatures": {
-				"experimentalObjectRestSpread" : true,
-		}
+		"ecmaVersion": 6
 	},
 	"env": {
 		"browser": true,

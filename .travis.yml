@@ -20,6 +20,8 @@ before_install:
   - if [ ! -e "$HOME/.meteor/meteor" ]; then curl https://install.meteor.com | sed s/--progress-bar/-sL/g | /bin/sh; fi
 before_script:
   - "export PATH=$HOME/.meteor:$PATH"
+env:
+  CODECLIMATE_REPO_TOKEN: fc24e982c5a9e2ffc5356440f2570b87f1b264114879fe8090af48f6164b4438
 notifications:
   webhooks:
     urls:
