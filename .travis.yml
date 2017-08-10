@@ -24,6 +24,7 @@ env:
   CODECLIMATE_REPO_TOKEN: fc24e982c5a9e2ffc5356440f2570b87f1b264114879fe8090af48f6164b4438
   CODACY_PROJECT_TOKEN: 14ccd44d8acc47fa8e054c011df0abd4
 notifications:
+  slack: open-marketplace:gyLmoLZbhRDl9k6UMRvWMmvC
   webhooks:
     urls:
       - https://webhooks.gitter.im/e/223aa9c20089a22f388b
