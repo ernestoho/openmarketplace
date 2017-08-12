@@ -9,3 +9,12 @@
 [![CLA assistant](https://cla-assistant.io/readme/badge/openmarketplace/openmarketplace)](https://cla-assistant.io/openmarketplace/openmarketplace)
 
 Web app built with amazing [Meteor](https://www.meteor.com).
+
+## Getting Started
+```shellscript
+git clone https://github.com/openmarketplace/openmarketplace.git
+cd openmarketplace
+meteor npm start
+# For lint code style
+sudo npm install -g eslint eslint-config-standard eslint-plugin-meteor eslint-plugin-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise
+```

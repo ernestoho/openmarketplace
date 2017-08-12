@@ -1,6 +1,6 @@
 module.exports = {
 	"plugins": ["meteor"],
-  "extends": ["plugin:meteor/recommended", "standard"],
+  	"extends": ["plugin:meteor/recommended", "standard"],
 	"parserOptions": {
 		"sourceType": "module",
 		"ecmaVersion": 6
@@ -11,17 +11,16 @@ module.exports = {
 		"es6": true,
 		"node": true,
 		"jquery": true,
-		"mocha": true
+		"mocha": true,
+		"meteor": true,
+		"mongo": true
 	},
     "globals": {
 		"_"                           : false,
 		"__meteor_runtime_config__"   : false,
 		"Accounts"                    : false,
 		"Assets"                      : false,
-		"Blaze"                       : false,
-		"BlazeLayout"                 : false,
 		"check"                       : false,
-		"CryptoJS"                    : false,
 		"DDPRateLimiter"              : false,
 		"EJSON"                       : false,
 		"Email"                       : false,
