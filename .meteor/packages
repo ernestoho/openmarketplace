@@ -4,11 +4,11 @@ meteor-base
 mobile-experience
 mongo
 blaze-html-templates
-reactive-var
 tracker
 accounts-base
 apollo
 check
+static-html
 
 standard-minifier-css
 standard-minifier-js
@@ -21,3 +21,10 @@ kadira:blaze-layout
 
 practicalmeteor:mocha
 johanbrook:publication-collector
+
+akryum:vue
+akryum:vue-component
+akryum:vue-router2
+akryum:vue-sass
+akryum:vue-ssr
+akryum:vue-stylus
