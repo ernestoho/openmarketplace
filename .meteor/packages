@@ -3,7 +3,6 @@
 meteor-base
 mobile-experience
 mongo
-blaze-html-templates
 tracker
 accounts-base
 apollo

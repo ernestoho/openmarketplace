@@ -16,6 +16,7 @@
     "express": "^4.15.4",
     "graphql": "^0.11.3",
     "graphql-tools": "^1.2.2",
+    "intersection-observer": "^0.4.2",
     "meteor-node-stubs": "~0.2.4",
     "vue": "^2.4.4",
     "vue-meteor-tracker": "^1.2.3",

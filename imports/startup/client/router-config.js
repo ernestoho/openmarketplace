@@ -1,8 +1,8 @@
-// Import the router and default page for NotFound resource
+// Vue.js Router Configurations
+
 import { RouterFactory, nativeScrollBehavior } from 'meteor/akryum:vue-router2'
 import NotFound from '/imports/ui/pages/NotFound.vue'
 
-// Create router instance
 export const routerFactory = new RouterFactory({
   mode: 'history',
   scrollBehavior: nativeScrollBehavior

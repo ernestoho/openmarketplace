@@ -1,6 +1,4 @@
-/**
- * Define initial route
- */
+// OpenMarketplace Routes
 
 export default [
   {
