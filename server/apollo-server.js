@@ -23,7 +23,7 @@ const defaultServerConfig = {
   graphiqlPath: '/graphiql',
   // GraphiQL options (default: log the current user in your request)
   graphiqlOptions: {
-    passHeader: "'meteor-login-token': localStorage['Meteor.loginToken']",
+    passHeader: "'meteor-login-token': localStorage['Meteor.loginToken']"
   }
 }
 
@@ -35,7 +35,7 @@ const defaultGraphQLOptions = {
   formatError: e => ({
     message: e.message,
     locations: e.locations,
-    path: e.path,
+    path: e.path
   }),
   // additional debug logging if execution errors occur in dev mode
   debug: Meteor.isDevelopment
@@ -86,8 +86,7 @@ export const createApolloServer = (customOptions = {}, customConfig = {}) => {
         const userContext = await getUserForContext(loginToken)
 
         // context can accept a function returning the context object
-        const context = typeof options.context === 'function'
-            ? await options.context(userContext) : { ...options.context, ...userContext }
+        const context = typeof options.context === 'function' ? await options.context(userContext) : { ...options.context, ...userContext }
 
         // return the configured options to be used by the graphql server
         return {
@@ -138,7 +137,7 @@ export const getUserForContext = async loginToken => {
     // note: no need of a fiber aware findOne + a fiber aware call break tests
     // runned with practicalmeteor:mocha if eslint is enabled
     const currentUser = await Meteor.users.rawCollection().findOne({
-      'services.resume.loginTokens.hashedToken': hashedToken,
+      'services.resume.loginTokens.hashedToken': hashedToken
     })
 
     // the current user exists
@@ -167,15 +166,15 @@ export const getUserForContext = async loginToken => {
     }
   }
 
-  return {};
-};
+  return {}
+}
 
 // take the existing context and return a new extended context with the current
 // user if relevant (i.e. valid login token)
 export const addCurrentUserToContext = async (context, loginToken) => {
-  const userContext = await getUserForContext(loginToken);
+  const userContext = await getUserForContext(loginToken)
   return {
     ...context,
-    ...userContext,
-  };
-};
+    ...userContext
+  }
+}
