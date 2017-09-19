@@ -1,3 +1,5 @@
+// Custom Filters
+
 import moment from 'moment'
 
 export function date (value) {

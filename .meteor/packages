@@ -1,29 +1,22 @@
-# Meteor packages used by OpenMarketplace project, one per line.
+# Meteor packages used by OpenMarketplace Core
 
 meteor-base
 mobile-experience
 mongo
 tracker
+
 accounts-base
 apollo
 check
-static-html
-
+ecmascript
+es5-shim
+less
 standard-minifier-css
 standard-minifier-js
-es5-shim
-ecmascript
-less
-
-kadira:flow-router
-kadira:blaze-layout
+static-html
 
 practicalmeteor:mocha
-johanbrook:publication-collector
 
 akryum:vue
 akryum:vue-component
-akryum:vue-router2
 akryum:vue-sass
-akryum:vue-ssr
-akryum:vue-stylus

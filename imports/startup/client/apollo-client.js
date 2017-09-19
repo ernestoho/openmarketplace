@@ -91,7 +91,6 @@ export const createMeteorNetworkInterface = (customNetworkInterfaceConfig = {}) 
         }
       ])
     } catch (error) {
-      // catch the potential error sent by if a login token is manually set client-side
       console.error(error)
     }
   }
@@ -101,8 +100,7 @@ export const createMeteorNetworkInterface = (customNetworkInterfaceConfig = {}) 
 
 // default Apollo Client configuration object
 const defaultClientConfig = {
-  // setup ssr mode if the client is configured server-side (ex: for SSR)
-  ssrMode: Meteor.isServer
+  ssrMode: false
 }
 
 // create a new client config object based on the default Apollo Client config
@@ -119,14 +117,11 @@ export const meteorClientConfig = (customClientConfig = {}) => ({
 // grab the token from the storage or config to be used in the network interface creation
 export const getMeteorLoginToken = (config = {}) => {
   // possible cookie login token created by meteorhacks:fast-render
-  // and passed to the Apollo Client during server-side rendering
   const { loginToken = null } = config
 
-  // Meteor accounts-base login token stored in local storage,
-  // only exists client-side as of Meteor 1.4, will exist with Meteor 1.5
+  // Meteor accounts-base login token stored in local storage
   const localStorageLoginToken = Meteor.isClient && Accounts._storedLoginToken()
 
   // return a meteor login token if existing
-  // ex: grabbed from local storage or passed during server-side rendering
   return localStorageLoginToken || loginToken
 }
