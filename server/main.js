@@ -6,7 +6,7 @@ import '/imports/startup/both'
 import { createApolloServer } from 'meteor/apollo'
 import { makeExecutableSchema } from 'graphql-tools'
 
-import { typeDefs, resolvers } from '/imports/api/schema.js'
+import { typeDefs, resolvers } from '/imports/api/schema/index.js'
 
 const schema = makeExecutableSchema({
   typeDefs,

@@ -1,5 +1,5 @@
-import NotFound from './ui/NotFound.vue'
-import Home from './ui/Home.vue'
+import NotFound from '/imports/ui/pages/NotFound.vue'
+import Home from '/imports/ui/pages/Home.vue'
 
 export default [
   { path: '/', name: 'home', component: Home },
