@@ -18,17 +18,20 @@ meteor
 ## Roadmap
 This is the current OpenMarketplace Web App features on the road:
 
-- [ ] Pages for Products, Services and Places (#10)
-- [ ] Chat Peer-to-Peer (#20)
-- [ ] Review and Ratings (#15)
-- [ ] Basis of Payments Gateway and Split Flow (#6)
-- [ ] PayPal as Default Gateway of Payments (#33)
-- [ ] Public Profiles and Custom Storepages (#9)
-- [ ] Access Control (#13)
-- [ ] Multiple Marketplace Types Support (#4)
-- [ ] Multiple Languages Support (#12)
-- [ ] Multiple Currency Support (#12)
-- [ ] General Push Notifications
+- [ ] OpenMarketplace Initial Architecture ([#1](https://github.com/openmarketplace/openmarketplace/issues/1), [#34](https://github.com/openmarketplace/openmarketplace/issues/34), [#35](https://github.com/openmarketplace/openmarketplace/issues/35))
+- [ ] Users Registrations
+- [ ] Stores Registrations
+- [ ] Products, Services and Places Registrations ([#10](https://github.com/openmarketplace/openmarketplace/issues/10))
+- [ ] Chat Peer-to-Peer ([#20](https://github.com/openmarketplace/openmarketplace/issues/20))
+- [ ] Review and Ratings ([#15](https://github.com/openmarketplace/openmarketplace/issues/15))
+- [ ] Basis of Payments Gateway and Split Flow ([#6](https://github.com/openmarketplace/openmarketplace/issues/6))
+- [ ] PayPal as Default Gateway of Payments ([#33](https://github.com/openmarketplace/openmarketplace/issues/33))
+- [ ] Public Profiles and Custom Storepages ([#9](https://github.com/openmarketplace/openmarketplace/issues/9))
+- [ ] Access Control ([#13](https://github.com/openmarketplace/openmarketplace/issues/13))
+- [ ] Multiples Marketplace Types Support ([#4](https://github.com/openmarketplace/openmarketplace/issues/4))
+- [ ] Multiples Languages Support ([#12](https://github.com/openmarketplace/openmarketplace/issues/12))
+- [ ] Multiples Currency Support ([#12](https://github.com/openmarketplace/openmarketplace/issues/12))
+- [ ] Push Notifications
 
 ## Stack
 - Web platform with [Meteor](https://meteor.com) + [Vue 2](https://vuejs.org) + [Bulma](http://bulma.io). A fuller reactive [Progressive Web App](https://developers.google.com/web/progressive-web-apps).
