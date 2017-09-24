@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueApollo from 'vue-apollo'
-import { ApolloClient } from 'apollo-client'
-import { createMeteorNetworkInterface } from './apollo-client.js'
+import { createApolloClient } from '../../../lib/apollo.js'
 
 import AppLayout from '/imports/ui/layouts/AppLayout.vue'
 
@@ -22,13 +21,8 @@ Meteor.startup(function () {
     routes
   })
 
-  const apolloClient = new ApolloClient({
-    networkInterface: createMeteorNetworkInterface(),
-    connectToDevTools: Meteor.isDevelopment
-  })
-
   const apolloProvider = new VueApollo({
-    defaultClient: apolloClient
+    defaultClient: createApolloClient()
   })
 
   new Vue({

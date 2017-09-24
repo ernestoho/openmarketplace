@@ -13,7 +13,7 @@ import { Accounts } from 'meteor/accounts-base'
 
 import { GraphQLSchema } from './graphql.js'
 import { Utils } from '../lib/utils.js'
-import { webAppConnectHandlersUse } from './meteor_patch.js'
+import { webAppConnectHandlersUse } from './meteor-patch.js'
 
 import { Collections } from './collections.js'
 

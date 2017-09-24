@@ -4,7 +4,7 @@ import { addGraphQLCollection, addGraphQLQuery, addGraphQLMutation, addGraphQLRe
 import { Utils } from '/lib/utils.js'
 import { runCallbacks } from '/lib/callbacks.js'
 import { getSetting } from '/lib/settings.js'
-import { registerFragment, getDefaultFragmentText } from './fragments.js'
+import { registerFragment, getDefaultFragmentText } from '../lib/fragments.js'
 import escapeStringRegexp from 'escape-string-regexp'
 
 export const Collections = []

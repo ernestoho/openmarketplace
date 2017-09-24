@@ -22,6 +22,7 @@
     "graphql": "^0.11.3",
     "graphql-date": "^1.0.3",
     "graphql-loader": "^1.2.1",
+    "graphql-server-express": "^1.1.2",
     "graphql-tag": "^2.4.2",
     "graphql-tools": "^1.2.3",
     "graphql-type-json": "^0.1.4",
