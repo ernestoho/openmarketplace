@@ -121,6 +121,8 @@ export const GraphQLSchema = {
     let inputSchema = []
     let unsetSchema = []
 
+    const schema = collection.simpleSchema()._schema
+
     _.forEach(schema, (field, fieldName) => {
       const fieldType = getGraphQLType(schema, fieldName)
 
@@ -162,10 +164,7 @@ export const GraphQLSchema = {
 
           const isRequired = ''
 
-          // 2. input schema
           inputSchema.push(`${fieldName}: ${fieldType}${isRequired}`)
-
-          // 3. unset schema
           unsetSchema.push(`${fieldName}: Boolean`)
         }
       }
@@ -194,9 +193,7 @@ export const GraphQLSchema = {
 }
 
 OM.getGraphQLSchema = () => {
-  const schema = GraphQLSchema.finalSchema[0]
-  console.log(schema)
-  return schema
+  return GraphQLSchema.finalSchema[0]
 }
 
 export const addGraphQLCollection = GraphQLSchema.addCollection.bind(GraphQLSchema)
