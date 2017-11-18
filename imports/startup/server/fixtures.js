@@ -3,7 +3,7 @@
 import { Meteor } from 'meteor/meteor'
 import { SyncedCron } from 'meteor/percolatestudio:synced-cron'
 
-Meteor.startup(() => {
+Meteor.startup(function () {
   if (typeof SyncedCron !== 'undefined') {
     SyncedCron.start()
   }

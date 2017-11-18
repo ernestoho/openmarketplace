@@ -1,3 +1,5 @@
+import { ServiceConfiguration } from 'meteor/service-configuration'
+
 const services = Meteor.settings.oAuth
 
 if (services) {
