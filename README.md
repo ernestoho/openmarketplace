@@ -11,8 +11,7 @@ Web app built with amazing [Meteor](https://www.meteor.com) as application platf
 ```shellscript
 git clone https://github.com/openmarketplace/openmarketplace.git
 cd openmarketplace
-meteor npm install
-meteor
+npm run dev
 ```
 
 ## Roadmap

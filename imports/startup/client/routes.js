@@ -22,4 +22,4 @@ const officeRoutes = [
   }
 ]
 
-export default globalRoutes.push(...storeRoutes).push(...officeRoutes)
+export default [...globalRoutes, ...storeRoutes, ...officeRoutes]

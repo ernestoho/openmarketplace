@@ -15,7 +15,8 @@ standard-minifier-css
 standard-minifier-js
 static-html
 
+akryum:vue-component
 jagi:astronomy
+mizzao:user-status
 percolatestudio:synced-cron
 practicalmeteor:mocha
-mizzao:user-status

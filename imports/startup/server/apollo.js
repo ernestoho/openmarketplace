@@ -1,10 +1,12 @@
-import { createApolloServer } from 'meteor/apollo'
-import { makeExecutableSchema } from 'graphql-tools'
+// import { createApolloServer } from 'meteor/apollo'
+// import { makeExecutableSchema } from 'graphql-tools'
 
 // import { commentResolvers } from '../imports/api/comments/comment-resolvers'
 // import { commentTypes, commentQueries } from '../imports/api/comments/comment-schema'
 // import { postTypes, postQueries } from '../imports/api/posts/post-schema'
 // import { postResolvers } from '../imports/api/posts/post-resolvers'
+
+// import Service from '../../api/services/service.graphql'
 
 // Meteor.startup(() => {
 //   // Startup Apollo Server on startup Meteor Server
