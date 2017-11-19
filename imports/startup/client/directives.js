@@ -1,7 +1,7 @@
 // Vue.js Directives
 
 export const InputFocus = {
-  inserted: function (el) {
+  inserted: function(el) {
     el.focus()
   }
 }

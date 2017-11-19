@@ -1,9 +1,25 @@
-import NotFound from '/imports/ui/pages/NotFound.vue'
-import Home from '/imports/ui/pages/Home.vue'
-import Product from '/imports/ui/pages/Product.vue'
+// Global Routes
+import NotFound from '../../ui/pages/NotFound.vue'
+// Store Routes
+import Home from '../../ui/pages/store/Home.vue'
+// Office Routes
+import Dashboard from '../../ui/pages/office/Dashboard.vue'
 
-export default [
-  { path: '/', name: 'home', component: Home },
-  { path: '/products', name: 'products', component: Home },
+const globalRoutes = [
   { path: '*', name: 'not-found', component: NotFound }
 ]
+
+const storeRoutes = [
+  { path: '/', name: 'home', component: Home }
+]
+
+const officeRoutes = [
+  {
+    path: '/office',
+    children: [
+      { path: '/dashboard', name: 'office_dashboard', component: Dashboard }
+    ]
+  }
+]
+
+export default globalRoutes.push(...storeRoutes).push(...officeRoutes)

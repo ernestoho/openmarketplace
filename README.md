@@ -1,11 +1,11 @@
 # The Open Source Marketplace Platform
 
-[![Build Status](https://travis-ci.org/bonotech/OpenMarketplace.svg?branch=develop)](https://travis-ci.org/openmarketplace/openmarketplace)
+[![Build Status](https://travis-ci.org/openmarketplace/openmarketplace.svg?branch=develop)](https://travis-ci.org/openmarketplace/openmarketplace)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b019e36b2e47432a842f3ad8de522b1a)](https://www.codacy.com/app/OpenMarketplace/OpenMarketplace?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=openmarketplace/openmarketplace&amp;utm_campaign=Badge_Grade)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Web app built with amazing [Meteor](https://www.meteor.com) as Javascript Framework application platform and [Vue 2](https://vuejs.org) as Javascript Framework frontend.
+Web app built with amazing [Meteor](https://www.meteor.com) as application platform Javascript Framework and [Vue 2](https://vuejs.org) as frontend Javascript Framework.
 
 ## Getting Started
 ```shellscript
@@ -44,7 +44,7 @@ This is the current OpenMarketplace Web App features on the road:
 We love pretty code for human beings! Our source follows basis of the [Meteor Code Style](https://guide.meteor.com/code-style.html), besides [Javascript Standard Style](https://standardjs.com/). Keep it simple!
 
 ```shellscript
-npm install --global eslint eslint-config-standard eslint-plugin-meteor eslint-plugin-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise
+npm install -g eslint babel-eslint eslint-plugin-babel eslint-plugin-meteor eslint-plugin-standard eslint-plugin-graphql eslint-plugin-import eslint-plugin-node eslint-plugin-promise
 ```
 
 ## Credits

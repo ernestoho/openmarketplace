@@ -1,15 +1,9 @@
 <template>
-
   <div id="app">
     <navbar></navbar>
 
-    <transition>
-      <keep-alive>
-        <router-view></router-view>
-      </keep-alive>
-    </transition>
+    <router-view></router-view>
   </div>
-
 </template>
 
 <script>
