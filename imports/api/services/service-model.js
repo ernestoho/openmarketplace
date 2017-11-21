@@ -1,4 +1,3 @@
-import { Mongo } from 'meteor/mongo'
 import { Class, Enum } from 'meteor/jagi:astronomy'
 
 export const ServiceStatus = Enum.create({
