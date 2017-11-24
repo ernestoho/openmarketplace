@@ -17,6 +17,8 @@ static-html
 
 akryum:vue-component
 jagi:astronomy
+jagi:astronomy-slug-behavior
+jagi:astronomy-timestamp-behavior
 mizzao:user-status
 percolatestudio:synced-cron
 practicalmeteor:mocha

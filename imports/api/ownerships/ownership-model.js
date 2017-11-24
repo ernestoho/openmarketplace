@@ -33,6 +33,8 @@ export const Ownership = Class.create({
         type: 'maxLength', param: 500, message: 'ownership_description_max_length'
       }]
     },
+    userId: String,
+    createdAt: Date,
     status: {
       type: OwnershipStatus,
       default: OwnershipStatus.DRAFT
@@ -48,7 +50,7 @@ export const Ownership = Class.create({
     }
   },
   indexes: {
-    unique_service_title: {
+    unique_ownership_title: {
       fields: {
         slug: 1,
         title: 1
@@ -73,6 +75,30 @@ export const Ownership = Class.create({
       // TODO: implements...
     },
     cancelBooking() {
+      // TODO: implements...
+    },
+    addRental() {
+      // TODO: implements...
+    },
+    removeRental() {
+      // TODO: implements...
+    },
+    confirmRental() {
+      // TODO: implements...
+    },
+    cancelRental() {
+      // TODO: implements...
+    },
+    addSelling() {
+      // TODO: implements...
+    },
+    removeSelling() {
+      // TODO: implements...
+    },
+    confirmSelling() {
+      // TODO: implements...
+    },
+    cancelSelling() {
       // TODO: implements...
     }
   }

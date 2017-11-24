@@ -2,10 +2,9 @@
   "name": "open-marketplace",
   "private": true,
   "scripts": {
-    "start": "meteor npm install && meteor run",
+    "start": "meteor npm install && eslint . && meteor run",
     "lint": "eslint .",
-    "pretest": "npm run lint --silent",
-    "dev": "npm run lint && npm start"
+    "pretest": "npm run lint --silent"
   },
   "dependencies": {
     "apollo-client": "^1.9.2",

@@ -1,7 +1,0 @@
-type Service {
-  _id: String,
-  title: String,
-  description: String,
-  status: Int,
-  slug: String
-}

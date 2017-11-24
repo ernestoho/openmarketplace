@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <navbar></navbar>
+    <navbar-office></navbar-office>
 
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-  import Navbar from '/imports/ui/components/Navbar.vue';
+  import NavbarOffice from '/imports/ui/components/NavbarOffice.vue';
 
   export default {
     components: {
-      Navbar
+      NavbarOffice
     }
   }
 </script>

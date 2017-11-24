@@ -7,7 +7,7 @@ import VueApollo from 'vue-apollo'
 import ApolloClient from 'apollo-client'
 import { meteorClientConfig } from 'meteor/apollo'
 
-import AppLayout from '/imports/ui/layouts/AppLayout.vue'
+import LayoutStore from '/imports/ui/layouts/LayoutStore.vue'
 
 import routes from './routes.js'
 
@@ -18,7 +18,8 @@ import '/imports/ui/stylesheets/material-icons.css'
 import './plugins'
 
 Vue.use(Buefy, {
-  defaultSnackbarDuration: 5000, defaultToastDuration: 5000
+  defaultSnackbarDuration: 5000,
+  defaultToastDuration: 5000
 })
 
 Vue.use(VueApollo)
@@ -38,6 +39,6 @@ Meteor.startup(function() {
   new Vue({
     router,
     apolloProvider,
-    render: layout => layout(AppLayout)
+    render: layout => layout(LayoutStore)
   }).$mount('app')
 })

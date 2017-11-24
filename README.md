@@ -7,11 +7,24 @@
 
 Web app built with amazing [Meteor](https://www.meteor.com) as application platform Javascript Framework and [Vue 2](https://vuejs.org) as frontend Javascript Framework.
 
-## Getting Started
+## Getting Started for Developers
+Meteor.js need be installed on your machine.
+
+### Installing Meteor on Linux or Mac OSX
+```shellscript
+curl https://install.meteor.com/ | sh
+```
+
+### Installing Meteor on Windows
+```shellscript
+choco install meteor
+```
+
+### Getting and Running the OpenMarketplace
 ```shellscript
 git clone https://github.com/openmarketplace/openmarketplace.git
 cd openmarketplace
-npm run dev
+meteor npm start
 ```
 
 ## Roadmap
@@ -19,7 +32,6 @@ This is the current OpenMarketplace Web App features on the road:
 
 - [ ] OpenMarketplace Initial Architecture ([#1](https://github.com/openmarketplace/openmarketplace/issues/1), [#34](https://github.com/openmarketplace/openmarketplace/issues/34), [#35](https://github.com/openmarketplace/openmarketplace/issues/35))
 - [ ] Users Registrations
-- [ ] Stores Registrations
 - [ ] Products, Services and Places Registrations ([#10](https://github.com/openmarketplace/openmarketplace/issues/10))
 - [ ] Chat Peer-to-Peer ([#20](https://github.com/openmarketplace/openmarketplace/issues/20))
 - [ ] Review and Ratings ([#15](https://github.com/openmarketplace/openmarketplace/issues/15))
